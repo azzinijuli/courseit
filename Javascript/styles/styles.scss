@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import "base/reset";
+
+* {
+    box-sizing: border-box
+}
+
+
+body {
+    background-color: rgb(72, 202, 235);
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+
+    .search-wrapper {
+        margin: 0 auto;
+        width: 300px;
+        display: flex;
+				flex-direction: column;
+				
+        .username {
+						margin-top: 1.5rem;
+						padding: 0.8rem;
+						border-radius: 5px;
+						border: none;
+						font-size: 1rem;
+				}
+				
+        .search {
+						padding: 0.8rem;
+						margin: 1rem 0;
+						border-radius: 5px;
+						border: none;
+						font-size: 1rem;
+						font-weight: bold;
+						color: #009999;
+						background-color: #33FFFF;
+						&:hover {
+							background-color: rgb(55, 238, 238) ;
+							cursor: pointer;
+						}
+        }
+		}
+		.error {
+			display: none;
+			&.show {
+				display: flex;
+				flex-direction: column;
+			}
+			.error-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				font-size: 1rem;
+				font-weight: bold;
+				color: #009999;
+			}
+			.img-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding-top: 1rem;
+				
+				.error-img {
+					max-width: 400px;
+					max-height: 400px;
+					height: 100%;
+					width: 100%;
+					border-radius: 15px;
+				
+				}
+			}
+		}
+		.user-wrapper {
+			margin: 7rem auto;
+			width: 300px;
+			border: 2px solid #009999;
+			color: white;
+			font-weight: bold;
+			font-size: 1rem;
+			padding: 1rem;
+			text-align: center;
+			position: relative;
+
+			.profile-pic {
+				display: none;
+				width: 9rem;
+				height: auto;
+				border-radius: 50%;
+				border: 2px solid #009999;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.profile-info {
+				margin-top: 4.5rem;	
+				.login {
+					font-size: 2rem;
+					&:hover {
+						color:#009999;
+						cursor: pointer;
+						transition: 0.2s;
+					}
+				}
+
+				.info {
+					font-size: 1.2rem;
+					padding: 0.5rem 0;
+				}
+	
+				.user {
+					font-weight: lighter;
+				}
+
+			}
+		}
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document Test</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <main>
+      <div class="search-wrapper">
+        <input type="text" class="username" placeholder="type username...">
+        <button class="search">Buscar usuario </button>
+      </div>
+
+      <div class="error">
+        <p class="error-text">Uh-oh! This user doesn't exist. Please try another one.</p>
+        <div class="img-container">
+          <img src="https://i.redd.it/rxwxguvca39x.jpg" alt="error" class="error-img">
+        </div>
+        
+      </div>
+
+      <div class="user-wrapper">
+        <div>
+          <img src="" alt="profile picture" class="profile-pic">
+        </div>
+      
+        <div class="profile-info" id="profileInfo">
+          <span class="login js-login"></span>
+
+          <h4 class="info name">Real Name</h4>
+          <span class="user js-user-name"></span>
+
+          <h4 class="info location">Location</h4>
+          <span class="user js-user-location"></span>
+
+          <h4 class="info repo">Number of public repos</h4>
+          <span class="user js-user-repos"></span>
+
+          <h4 class="info followers">Number of followers</h4>
+          <span class="user js-user-followers"></span>
+
+        </div>
+      </div>
+    </main>
+
+  <script src="./script.js"></script>
+  </body>
+</html>
